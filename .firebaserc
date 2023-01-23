@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "staging": "uptamira",
+    "default": "uptamira"
+  },
+  "targets": {
+    "uptamira": {
+      "hosting": {
+        "uptamira": [
+          "uptamira"
+        ]
+      }
+    }
+  }
+}

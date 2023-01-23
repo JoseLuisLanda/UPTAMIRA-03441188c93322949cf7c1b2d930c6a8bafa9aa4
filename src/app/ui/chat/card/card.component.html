@@ -1,0 +1,10 @@
+<div class="containerHalf d-flex " [ngClass]="{'justify-content-start':!chat.mine, 'justify-content-end':chat.mine}">
+  <div class="card border-primary col-11 col-sm-10 col-md-8 ">
+    <div class="card-header"><h5 class="text-white">{{chat.title}}</h5></div>
+    <div *ngIf="!chat.mine" class="card-body text-primary">
+      <!--p class="card-title text-white">Resultados similares:</p--><br/>
+         <button *ngFor="let recomendation of chat.elements" (click)="selectedItem(recomendation)" type="button" class="btn btn-primary btn-sm">{{recomendation.name}}</button>
+         
+    </div>
+  </div>
+</div>
